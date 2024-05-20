@@ -1,16 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import '../App.css';
 import axios from 'axios'; 
-import CharacterDetails from './CharacterDetails';
-// import handleClick from './NewGuy';
 
 
 const PUBLICKEY = '5e83269ec051b7b758ac278f046cd828'
 const HASH = '64f08731fe7f0838f63d642c3c93361a'
-function handleClick(characterId) {
-  CharacterDetails(characterId)
-  console.log(characterId)
-}
+
 
 function CharacterList() {
     const [characters, setCharacters] = useState([])
@@ -29,7 +24,6 @@ function CharacterList() {
 
 return (
 <div>
-
       <h1>Marvel Characters</h1>
       <ul>
 
@@ -48,8 +42,6 @@ return (
       </ul>
     </div>
 
-
       )
     }
 export default CharacterList
-
